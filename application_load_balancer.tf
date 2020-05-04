@@ -246,7 +246,7 @@ resource "aws_instance" "nginx1" {
     inline = [
       "sudo yum install nginx -y",
       "sudo service nginx start",
-      "echo '<html><head><title>Alation web team</title></head><body style=\"background-color:#1F778D\"><p style=\"text-align: center;\"><span style=\"color:#FFFFFF;\"><span style=\"font-size:28px;\">Alation Web Team</span></span></p></body></html>' | sudo tee /usr/share/nginx/html/index.html",
+      "echo '<html><head><title>Hello World</title></head><body style=\"background-color:#1F778D\"><p style=\"text-align: center;\"><span style=\"color:#FFFFFF;\"><span style=\"font-size:28px;\">Hello World</span></span></p></body></html>' | sudo tee /usr/share/nginx/html/index.html",
     ]
   }
 }
@@ -268,7 +268,7 @@ resource "aws_instance" "nginx2" {
     inline = [
       "sudo yum install nginx -y",
       "sudo service nginx start",
-      "echo '<html><head><title>Alation DB Team</title></head><body style=\"background-color:#77A032\"><p style=\"text-align: center;\"><span style=\"color:#FFFFFF;\"><span style=\"font-size:28px;\">Alation DB Team</span></span></p></body></html>' | sudo tee /usr/share/nginx/html/index.html",
+      "echo '<html><head><title>Hello World</title></head><body style=\"background-color:#77A032\"><p style=\"text-align: center;\"><span style=\"color:#FFFFFF;\"><span style=\"font-size:28px;\">Hello World</span></span></p></body></html>' | sudo tee /usr/share/nginx/html/index.html",
     ]
   }
 }
